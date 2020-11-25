@@ -1,0 +1,110 @@
+/********** GENERAL ************/
+h3 {line-height: 30px;}
+
+
+/********** PROFILE PAGE ************/
+.profileImage {
+    margin:0;
+    padding:0;position: static;
+}
+
+.name {
+    font-size:40px;color:#fff!important;
+    font-family: 'pf_beausans_probold';
+}
+
+.overlay {
+    position: absolute;
+    margin-top: 19%;
+}
+
+.buttons {text-align: right;margin-right:-195px;}
+.buttons .btn-primary {z-index:100;}
+
+.firsRowLeftrpofile {
+    margin-top:30px;
+}
+
+.infoBasics {
+    margin-top:40px;
+    padding-left: 10px;
+}
+
+.infoBasics .followBtn {
+    margin-top:20px;    
+}
+
+.infoBlock {
+    padding:20px 0 0;
+    font-size:16px;
+}
+
+.rightSideProfile{margin-top: -30px;}
+
+.whiteBox {
+    background:#fff;
+    padding:30px;
+    margin-bottom:20px;
+}
+
+.whiteBox .btn-info {margin-left:100px;}
+
+.lines {margin-top:40px;}
+.lineThin {border-bottom:1px solid #ccc;}
+.lineThinAbout {border-bottom:1px solid #ccc;margin-top:65px;width:90%;}
+.lineBold {border-bottom:4px solid #63becc;width:40%;}
+
+.fa-pencil {color:#9b9b9b;}
+
+/****************************************** CHECK FOR OTHER COLOR TEXT ******************************************/
+.purpleTxt {
+    color:#b33247;
+    font-family: 'pf_beausans_probold';
+}
+
+.blueTxt {
+    color:#63becc;
+    font-family: 'pf_beausans_probold';
+}
+
+.grey {
+    color:#9b9b9b;
+    font-family: 'pf_beausans_probold';
+}
+/*************************************************************************************************************************/
+
+@media screen and (min-width: 1024px) and (max-width:1200px) {
+    .overlay {margin-left: 0%;margin-top:16%;}
+}
+
+@media screen and (min-width: 768px) and (max-width:1023px) {
+    .buttons {text-align: center;margin-left:-37%;}
+    .whiteBox .btn-info {float: right;margin-top:-30px;}
+    .overlay {margin-left: 10%;margin-top:92%;}
+    .name {margin-bottom:20px;}
+    .profile {margin-top:80px;}
+    .infoBasics .followBtn {margin-bottom:10px;}
+}
+
+@media screen and (max-width: 767px) {
+    .name {text-align: center;}
+    .buttons {text-align: center;margin-right:0px;margin-top:35px;}
+    .overlay {margin-left: 10%;margin-top:80%;}
+    .infoBasics {text-align: center;}
+    .infoBasics .followBtn {margin-bottom: 10px;}
+    .lines {margin-top:50px;}
+    .profile {margin-top:120px;}
+    .buttons .btn-primary {margin-top:5px;}
+    .whiteBox .btn-info {margin-left:0px;margin-top:10px;}
+    .hideImage {display:none;}  
+}
+
+@media screen and (min-width: 440px) and (max-width: 767px) {
+    .overlay {margin-top:85%;}
+    .name {margin-bottom:30px;}
+    }
+
+@media screen and (min-width: 550px) and (max-width: 767px) {
+    .name {margin-bottom:70px;}
+    
+}

@@ -1,0 +1,42 @@
+h3 {
+    margin-top: 10px;
+}
+.row-fluid {
+    background: #fff;
+    margin: 5px 0;
+}
+.fa-heart-o {
+    color: #63becc;
+    padding-top: 12px;
+}
+.fa-heart-o:hover {
+    color: red;
+}
+.fa-times {
+    color: #F30;
+    padding-top: 12px;
+}
+.fa-times:hover {
+    color: #ccc;
+}
+@media screen and (max-width: 767px) {
+    .fa {
+        margin-bottom: 40px;
+    }
+    .second,
+    .third,
+    .fourth,
+    .fifth {
+        display: none;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .fa {
+        margin-bottom: 40px;
+    }
+    .third,
+    .fourth,
+    .fifth {
+        display: none;
+    }
+}

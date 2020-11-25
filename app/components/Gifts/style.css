@@ -1,0 +1,7 @@
+@media screen and (max-width:991px) {
+    .mainGiftProp h3 {
+      padding-top:30px;
+    }
+    .gifts {margin-top:-30px;
+    }
+}

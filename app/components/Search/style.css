@@ -1,0 +1,34 @@
+body,td,th {
+        font-family: "pf_beausans_prothin";
+        color: #666666!important;
+}
+
+.ages {
+  height: 30px!important;
+}
+
+.labelSearch {
+  margin-top:5px;
+}
+
+.searchButton {
+  margin-bottom: 30px;
+}
+
+h2 {
+  margin-bottom:30px;
+}
+
+select, input {
+  width:100%;
+}
+
+.col-md-3 {
+  padding:0 30px;
+}
+
+@media screen and (max-width:360px) {
+    .search h2 {
+      margin-top:-60px;
+    }
+}

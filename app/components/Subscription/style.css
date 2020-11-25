@@ -1,0 +1,91 @@
+body,
+td,
+th {
+    font-family: "pf_beausans_prothin";
+    color: #666666!important;
+}
+.subscriptionSettingsProp {
+    background: #fff;
+    margin-top: 20px;
+    padding: 50px 100px;
+}
+.form {
+    padding-right: 40px;
+}
+select {
+    font-family: "pf_beausans_prothin"!important;
+    height: 35px;
+    width: 100%!important;
+    background: #f8f8f8;
+    border: 1px solid #9a9999;
+    border-radius: 3px;
+}
+input {
+    font-family: "pf_beausans_prothin"!important;
+    height: 35px!important;
+    width: 100%!important;
+    background: #f8f8f8;
+    border: 1px solid #9a9999;
+    border-radius: 3px;
+}
+.fancy {
+    line-height: 0.5;
+    text-align: center;
+    margin: 30px 0 20px;
+}
+.fancy span {
+    display: inline-block;
+    position: relative;
+}
+.fancy span:before,
+.fancy span:after {
+    content: "";
+    position: absolute;
+    height: 5px;
+    border-bottom: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+    top: 0;
+    width: 100px;
+}
+.fancy span:before {
+    right: 100%;
+    margin-right: 15px;
+}
+.fancy span:after {
+    left: 100%;
+    margin-left: 15px;
+}
+.paymentBox {
+    border: 2px solid #ccc;
+    padding: 20px;
+    border-radius: 8px;
+    font-size: 14px;
+}
+.btn {
+    white-space: normal;
+    margin-bottom: 20px;
+}
+@media screen and (max-width: 991px) {
+    .subscriptionSettingsProp {
+        padding: 10px 30px;
+    }
+    .form {
+        padding-right: 0px;
+    }
+    .paypal {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .fancy span:before {
+        right: 60%;
+        margin-right: 40px;
+    }
+    .fancy span:after {
+        left: 60%;
+        margin-left: 40px;
+    }
+    .fancy span:before,
+    .fancy span:after {
+        width: 80px;
+    }
+}

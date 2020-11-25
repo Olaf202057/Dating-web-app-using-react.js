@@ -1,0 +1,18 @@
+body,td,th {
+  font-family: "pf_beausans_prothin"!important;
+  color: #666666!important;
+}
+        
+.birthday {
+  width:82%
+}  
+        
+.signUp {
+  max-width: 768px;
+}    
+        
+@media screen and (max-width:767px) {
+    .birthday {
+      width:106%;
+    }
+  }

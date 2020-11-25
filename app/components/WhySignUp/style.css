@@ -1,0 +1,11 @@
+@media screen and (max-width: 991px) {
+    .titleHeaderWsu {
+        margin-top: -20px;
+    }
+    .headerProp h2 {
+        padding-top: 15%
+    }
+    .list {
+        margin-top: 20px;
+    }
+}

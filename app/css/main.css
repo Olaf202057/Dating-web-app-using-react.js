@@ -1,0 +1,244 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+@import url(fonts/fonts.css);
+@import url(slider.css);
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section { display: block; }
+audio, canvas, video { display: inline-block; *display: inline; *zoom: 1; }
+audio:not([controls]) { display: none; }[hidden] { display: none; }
+Body, div, p, span, table, tr, td {line-height: inherit;} * {line-height: inherit;}
+
+/*---------------------------------------------General---------------------------------------------*/
+
+body {
+	height:100%;
+    background: url('../img/bg.png') repeat;
+    font-family: 'pf_beausans_prothin';
+    font-size: 16px;
+    color:  #afafaf;
+    position: relative;
+}
+
+a {text-decoration: none!important;}
+
+.transition {
+    -webkit-transition: 0.3s all ease;
+    -o-transition: 0.3s all ease;
+    -moz-transition: 0.3s all ease;
+    transition: 0.3s all ease;
+}
+
+.wrapper {
+    max-width: 1024px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 20px;
+}
+.block {
+    background: #fff;
+    width: 100%;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+/*---------------------------------------------Top line---------------------------------------------*/
+.top_nav {
+    width: 100%;
+    /**min-width: 1024px;**/
+    height: 78px;
+    background: #fff;
+}
+.open_menu {
+    width: 78px;
+    height: 78px;
+    background: url('../img/bricks.png') no-repeat center;
+    border-right: 1px solid #ededed;
+    float: left;
+    cursor: pointer;
+    position: relative;
+    z-index: 30;
+}
+.logo {
+    display: inline-block;
+    width: 66px;
+    height: 16px;
+    margin-left: 35px;
+    margin-top: 30px;
+}
+.body_container {}
+
+.menu_fixed {
+    width: 300px;
+    background: #25b6cf;
+    height: 2000px;
+    position: fixed;
+    top: 0;
+    left: -300px;
+    z-index: 20;
+}
+.for_open_menu_active {
+      background: #25B6CF url('../img/close.png') no-repeat center;
+}
+.menu_op_wrap {
+    background: #A2D9E5;
+    z-index: 10;
+    opacity: 0.9;
+}
+.menu_fixed a{
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    width: 100%;
+    padding: 29px 0;
+    text-align: center;
+    border-bottom: 1px solid #82D0DD;
+      margin-top: 1px;
+}
+.menu_fixed a:hover, .for_open_menu_active:hover {
+    background-color: #1EA1B8;
+}
+.top_right {
+    float: right;
+    width: 300px;
+    height: 78px;
+}
+.top_right .profile_pic_comment {
+    width: 55px;
+    height: 55px;
+    margin-top: 11px;
+}
+.top_right span {
+  margin-top: 29px;
+  display: inline-block;
+  text-align: center;
+  width: 200px;
+  overflow: hidden;
+  cursor: pointer;
+}
+.top_right span:hover{
+  text-decoration: underline;
+}
+.top_right span:after {
+  content: '';
+  display: inline-block;
+  width: 13px;
+  height: 6px;
+  background: url('../img/arrow2.png');
+  margin-left: 7px;
+  margin-bottom: 3px;
+}
+.top_right_open {
+    background: #fff;
+    height: 300px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.16);
+}
+
+.profileImgSml {
+    width:50px;height:50px;
+}
+
+.indexProfileImg {margin-top:15px;}
+
+@media screen and (max-width:767px) {
+    .indexProfileImg span {font-size:10px!important;}
+    .logo {width:60px;margin-left: 10px;}
+    .photoTxt h2{margin-top:-180px!important;text-align:center!important;}
+    .photoTxt h3 {text-align:center!important;}
+    .vertical-line {border-right:0px solid #fff!important;}
+    .more_photos img {margin-bottom:8px;}
+    .paddingColumnHome {padding-left:0px!important;}
+}
+
+@media screen and (min-width:768px) and (max-width:991px) {
+    .photoTxt h3 {font-size:16px;}
+}
+
+@media screen and (min-width:992px) and (max-width:1082px) {
+    .photoTxt h3 {font-size:20px;}
+    .other-photos .content {right:0px!important;padding:0 0px!important;}
+}
+
+/*---------------------------------------------Photo User---------------------------------------------*/
+.generalPhoto {
+    color: #fff;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+.photoTxt {
+    margin-top:-100px;    
+}
+
+.photoTxt .left {text-align: right;}
+
+.vertical-line {border-right:2px solid #fff;height:60%;padding:0 15px;}
+
+.user_meta_info {
+    float: left;
+    text-align: left;
+    border-left:  1px solid #fff;
+    padding-left: 25px;
+}
+.generalPhoto h2 {
+    font-family: 'pf_beausans_problack';
+    line-height: 13px;
+    padding-top: 6px;
+}
+
+.generalPhoto h3 {
+    font-family: 'pf_beausans_prothin';
+    font-weight: 100;
+    text-transform: uppercase;
+}
+.age {
+    font-size: 45px;
+    padding-left:15px
+}
+.age span {
+    font-size: 16px;
+    
+}
+.city {
+    display: block;margin-top:8px;padding-left:15px
+}
+
+
+
+/*---------------------------------------------filters---------------------------------------------*/
+
+.filterBox {background:#fff;padding:20px 0 40px;margin-bottom:10px;}
+
+.filterBox .btn-default {
+    color:#26C4DF;
+    border-bottom: 1px dashed #26C4DF;
+    border-left:none;
+    border-right:none;
+    border-top:none;
+    margin-top:-6px;
+}
+
+.age_input {
+    height: 25px;
+    padding: 0!important;
+    margin: -2px auto;
+    
+}
+.age_input input {
+    border: none;
+    background: none;
+    box-shadow: none;
+    text-align: center;
+    height: 24px;
+    border-radius: 0;
+    color:  #aaa;
+}
+.filter_error {
+    box-shadow: 0px 0px 7px rgb(203, 31, 31);
+    border-radius: 3px;
+}
+
+@media screen and (max-width:767px) {
+    .filterBox {height:100px;}
+}
